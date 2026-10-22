@@ -77,34 +77,58 @@ export default function About() {
         <div><p className="eyebrow">OUR PRINCIPLES</p><h2>Useful intelligence.<br /><span>Clear human decisions.</span></h2><p className="muted">Technology is valuable when it helps people understand a situation and act with confidence. The platform is designed around clarity, context, and practical workflows.</p></div>
         <div className="about-principle-list"><article><ShieldCheck /><div><b>Make risk easier to understand</b><p>Present exceptions with enough context to help teams review urgency and potential impact.</p></div></article><article><Layers3 /><div><b>Connect the relevant details</b><p>Bring related shipment and route information together instead of forcing users to jump between disconnected views.</p></div></article><article><Clock3 /><div><b>Help teams focus their time</b><p>Make it easier to spot where attention may be needed, so people can investigate the right issues first.</p></div></article><article><Target /><div><b>Keep people in control</b><p>Support human judgment and coordination; operational decisions remain with the people responsible for them.</p></div></article></div>
       </section>
+
 <section className="section about-leadership">
-  <div className="sectionhead">
-    <div>
-      <p className="eyebrow">OUR LEADERSHIP</p>
+  <div className="about-leadership-heading">
+    <p className="eyebrow">OUR LEADERSHIP</p>
+
+    <div className="about-leadership-title">
       <h2>
-        The person building<br />
+        The people building
+        <br />
         <span>CargoTrace.</span>
       </h2>
-    </div>
-    <p>
-      Building a clearer way for logistics teams to understand
-      shipment movement, recognize risks, and make informed decisions.
-    </p>
-  </div>
 
-  <article className="about-founder-card">
-    <div className="about-founder-avatar">VP</div>
-    <div className="about-founder-content">
-      <p className="eyebrow">FOUNDER</p>
-      <h3>Vincent Paul Somtochukwu</h3>
       <p>
-        Leading the vision behind CargoTrace Intelligence: making
-        complex supply-chain information easier to understand and
-        helping logistics teams move from fragmented updates to
-        clearer operational decisions.
+        Building a clearer way for logistics teams to understand
+        shipment movement, recognize risks, and make informed decisions.
       </p>
     </div>
-  </article>
+  </div>
+
+  <div className="about-founders-grid">
+    <article className="about-founder-card">
+      <div className="about-founder-avatar">VP</div>
+
+      <div className="about-founder-content">
+        <p className="eyebrow">FOUNDER</p>
+        <h3>Vincent Paul Somtochukwu</h3>
+
+        <p>
+          Leads the vision behind CargoTrace Intelligence, focused on
+          making complex supply-chain information easier to understand
+          and helping logistics teams make clearer, better-informed
+          operational decisions.
+        </p>
+      </div>
+    </article>
+
+    <article className="about-founder-card">
+      <div className="about-founder-avatar">EP</div>
+
+      <div className="about-founder-content">
+        <p className="eyebrow">CO-FOUNDER</p>
+        <h3>Ezembakwe Promise Akachukwu</h3>
+
+        <p>
+          Contributes to the development and direction of CargoTrace
+          Intelligence, helping shape a platform designed to improve
+          shipment visibility, operational awareness, and supply-chain
+          decision-making.
+        </p>
+      </div>
+    </article>
+  </div>
 </section>
       <section className="about-honesty"><div className="about-honesty-icon"><Activity /></div><div><p className="eyebrow">A NOTE ON CAPABILITIES</p><h3>Designed for actionable visibility.</h3><p>CargoTrace’s product pages describe the intended platform experience. Live carrier integrations, predictive models, automated alerts, and real-time data processing depend on the underlying services and data connections being implemented and configured. This website does not imply that every integration or automated capability is already active.</p></div></section>
 

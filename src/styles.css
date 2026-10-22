@@ -2447,17 +2447,56 @@ td em {
   border-top: 1px solid #1e293b;
 }
 
+.about-leadership-heading {
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  align-items: end;
+  gap: 32px;
+  margin-bottom: 44px;
+}
+
+.about-leadership-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.about-leadership-title h2 {
+  margin: 0;
+  font-size: clamp(30px, 3.5vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+
+.about-leadership-title h2 span {
+  color: #22d3ee;
+}
+
+.about-leadership-title > p {
+  max-width: 360px;
+  margin: 0 0 4px;
+  color: #94a3b8;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.about-founders-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
 .about-founder-card {
   display: flex;
   align-items: flex-start;
   gap: 24px;
+  min-width: 0;
   padding: 32px;
-  background: #0b1420;
+  background: #0a111b;
   border: 1px solid #1e293b;
   border-radius: 22px;
-  max-width: 760px;
-  transition: border-color 0.25s ease,
-              transform 0.25s ease;
+  transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
 .about-founder-card:hover {
@@ -2479,27 +2518,62 @@ td em {
   font-size: 17px;
 }
 
+.about-founder-content {
+  min-width: 0;
+}
+
 .about-founder-content h3 {
   margin: 8px 0 12px;
   color: #eaf2ff;
-  font-size: 23px;
+  font-size: 21px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
 }
 
 .about-founder-content > p:last-child {
   max-width: 590px;
+  margin-bottom: 0;
   color: #94a3b8;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.9;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .about-leadership-heading {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-leadership-title {
+    align-items: flex-start;
+  }
+
+  .about-founders-grid {
+    gap: 16px;
+  }
+
+  .about-founder-card {
+    gap: 16px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 650px) {
   .about-leadership {
     padding-top: 52px;
     padding-bottom: 52px;
   }
 
-  .about-founder-card {
+  .about-leadership-title {
+    flex-direction: column;
     gap: 16px;
+  }
+
+  .about-founders-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-founder-card {
     padding: 22px;
   }
 
