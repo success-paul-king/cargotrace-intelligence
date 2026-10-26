@@ -46,7 +46,7 @@ function Header() {
           <RouteIcon />
         </span>
         <span>
-          CargoTrace <b>Intelligence</b>
+          Logisentra <b>Intelligence</b>
           <small>SEE THE WHOLE JOURNEY</small>
         </span>
       </Link>
@@ -78,14 +78,14 @@ function Footer() {
             <RouteIcon />
           </span>
           <span>
-            CargoTrace <b>Intelligence</b>
+            Logisentra <b>Intelligence</b>
             <small>SEE THE WHOLE JOURNEY</small>
           </span>
         </Link>
         <span>Clarity for every mile.</span>
       </div>
       <div className="footerline bottom">
-        <span>© 2026 CargoTrace Intelligence</span>
+        <span>© 2026 Logisentra Intelligence</span>
         <span>
           <Link to="/contact">Contact</Link>
           <Link to="/legal">Privacy & Terms</Link>

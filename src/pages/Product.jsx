@@ -1,1 +1,159 @@
-import{Link}from'react-router-dom';import{ArrowRight,ShieldAlert,Route,Truck,BellRing,Building2,CheckCircle2}from'lucide-react';const items=[['Shipment Risk Engine','ANTICIPATE',ShieldAlert,'Bring status changes, route conditions, and exception signals together to understand which shipments need attention first.',['Risk indicators in one view','Prioritized exception queues','Context behind each signal']],['Route Performance Analytics','OPTIMIZE',Route,'Compare lane performance and review delay patterns to make better-informed routing decisions.',['Lane-level performance views','ETA variance summaries','Historical trend comparisons']],['Fleet Intelligence','COORDINATE',Truck,'Create a clearer picture of fleet activity and shipment progress across key operational touchpoints.',['Fleet status overview','Milestone tracking','Performance indicators']],['Exception Management','RESPOND',BellRing,'Give your team a consistent way to review exceptions, assign ownership, and track follow-up.',['Exception prioritization','Action ownership fields','Resolution tracking']],['Supplier Performance','IMPROVE',Building2,'Review supplier reliability and recurring service issues with structured performance indicators.',['Supplier scorecards','Delivery consistency views','Issue trend summaries']]];export default function Product(){return <main className="wrap page"><section className="pagehero"><p className="eyebrow">THE CARGOTRACE PLATFORM</p><h1>Operational clarity,<br/><span>from origin to arrival.</span></h1><p>One connected workspace for shipment visibility, risk review, and better supply-chain decisions.</p><div className="actions"><Link className="btn" to="/login">Explore workspace <ArrowRight/></Link><Link className="textlink" to="/contact">Talk to our team</Link></div><div className="metrics"><div><b>01</b><small>Connected view</small></div><div><b>05</b><small>Core capabilities</small></div><div><b>360°</b><small>Operational context</small></div></div></section><section className="section"><div className="sectionhead"><div><p className="eyebrow">MODULAR BY DESIGN</p><h2>Tools for the moments<br/><span>that matter.</span></h2></div><p>Start with the visibility you need, then build a more complete operational picture.</p></div><div className="modules">{items.map(([title,tag,Icon,desc,features],i)=><article className="module" key={title}><div className="icon cyan"><Icon/></div><div><small>{String(i+1).padStart(2,'0')} / {tag}</small><h3>{title}</h3><p>{desc}</p></div><ul>{features.map(f=><li key={f}><CheckCircle2/>{f}</li>)}</ul></article>)}</div></section><section className="section"><div className="cta"><div><p className="eyebrow">READY TO GET STARTED?</p><h2>Make the next move<br/>with more context.</h2><p>Connect with our team to discuss your workflow.</p></div><Link className="btn" to="/contact">Contact CargoTrace <ArrowRight/></Link></div></section></main>}
+import { Link } from "react-router-dom";
+import {
+  ArrowRight,
+  ShieldAlert,
+  Route,
+  Truck,
+  BellRing,
+  Building2,
+  CheckCircle2,
+} from "lucide-react";
+const items = [
+  [
+    "Shipment Risk Engine",
+    "ANTICIPATE",
+    ShieldAlert,
+    "Bring status changes, route conditions, and exception signals together to understand which shipments need attention first.",
+    [
+      "Risk indicators in one view",
+      "Prioritized exception queues",
+      "Context behind each signal",
+    ],
+  ],
+  [
+    "Route Performance Analytics",
+    "OPTIMIZE",
+    Route,
+    "Compare lane performance and review delay patterns to make better-informed routing decisions.",
+    [
+      "Lane-level performance views",
+      "ETA variance summaries",
+      "Historical trend comparisons",
+    ],
+  ],
+  [
+    "Fleet Intelligence",
+    "COORDINATE",
+    Truck,
+    "Create a clearer picture of fleet activity and shipment progress across key operational touchpoints.",
+    ["Fleet status overview", "Milestone tracking", "Performance indicators"],
+  ],
+  [
+    "Exception Management",
+    "RESPOND",
+    BellRing,
+    "Give your team a consistent way to review exceptions, assign ownership, and track follow-up.",
+    [
+      "Exception prioritization",
+      "Action ownership fields",
+      "Resolution tracking",
+    ],
+  ],
+  [
+    "Supplier Performance",
+    "IMPROVE",
+    Building2,
+    "Review supplier reliability and recurring service issues with structured performance indicators.",
+    [
+      "Supplier scorecards",
+      "Delivery consistency views",
+      "Issue trend summaries",
+    ],
+  ],
+];
+export default function Product() {
+  return (
+    <main className="wrap page">
+      <section className="pagehero">
+        <p className="eyebrow">THE LOGISENTRA PLATFORM</p>
+        <h1>
+          Operational clarity,
+          <br />
+          <span>from origin to arrival.</span>
+        </h1>
+        <p>
+          One connected workspace for shipment visibility, risk review, and
+          better supply-chain decisions.
+        </p>
+        <div className="actions">
+          <Link className="btn" to="/login">
+            Explore workspace <ArrowRight />
+          </Link>
+          <Link className="textlink" to="/contact">
+            Talk to our team
+          </Link>
+        </div>
+        <div className="metrics">
+          <div>
+            <b>01</b>
+            <small>Connected view</small>
+          </div>
+          <div>
+            <b>05</b>
+            <small>Core capabilities</small>
+          </div>
+          <div>
+            <b>360°</b>
+            <small>Operational context</small>
+          </div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="sectionhead">
+          <div>
+            <p className="eyebrow">MODULAR BY DESIGN</p>
+            <h2>
+              Tools for the moments
+              <br />
+              <span>that matter.</span>
+            </h2>
+          </div>
+          <p>
+            Start with the visibility you need, then build a more complete
+            operational picture.
+          </p>
+        </div>
+        <div className="modules">
+          {items.map(([title, tag, Icon, desc, features], i) => (
+            <article className="module" key={title}>
+              <div className="icon cyan">
+                <Icon />
+              </div>
+              <div>
+                <small>
+                  {String(i + 1).padStart(2, "0")} / {tag}
+                </small>
+                <h3>{title}</h3>
+                <p>{desc}</p>
+              </div>
+              <ul>
+                {features.map((f) => (
+                  <li key={f}>
+                    <CheckCircle2 />
+                    {f}
+                  </li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+      <section className="section">
+        <div className="cta">
+          <div>
+            <p className="eyebrow">READY TO GET STARTED?</p>
+            <h2>
+              Make the next move
+              <br />
+              with more context.
+            </h2>
+            <p>Connect with our team to discuss your workflow.</p>
+          </div>
+          <Link className="btn" to="/contact">
+            Contact Logisentra <ArrowRight />
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}

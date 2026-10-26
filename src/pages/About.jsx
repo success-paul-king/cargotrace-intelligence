@@ -31,9 +31,9 @@ export default function About() {
     <main className="wrap page aboutpage">
       <section className="abouthero about-hero-detailed">
         <div className="about-copy">
-          <p className="eyebrow">ABOUT CARGOTRACE INTELLIGENCE</p>
+          <p className="eyebrow">ABOUT LOGISENTRA INTELLIGENCE</p>
           <h1>Supply chains move fast.<br /><span>Your decisions should move with clarity.</span></h1>
-          <p className="about-intro">CargoTrace Intelligence is a logistics visibility and risk-awareness platform concept designed to help teams understand shipment movement, recognize operational exceptions, and make better-informed decisions across the supply chain.</p>
+          <p className="about-intro">Logisentra Intelligence is a logistics visibility and risk-awareness platform concept designed to help teams understand shipment movement, recognize operational exceptions, and make better-informed decisions across the supply chain.</p>
           <div className="actions">
             <Link className="btn" to="/product">Explore the platform <ArrowRight /></Link>
             <Link className="textlink" to="/contact">Talk to our team <ArrowUpRight /></Link>
@@ -47,7 +47,7 @@ export default function About() {
             <div className="network-node node-a"><span><MapPinned /></span><b>Shipment</b><small>Movement data</small></div>
             <div className="network-node node-b"><span><Activity /></span><b>Risk signals</b><small>Exceptions</small></div>
             <div className="network-node node-c"><span><Database /></span><b>Context</b><small>Operational detail</small></div>
-            <div className="network-center"><GitBranch /><b>CARGOTRACE</b><small>CONNECTED VIEW</small></div>
+            <div className="network-center"><GitBranch /><b>Logisentra</b><small>CONNECTED VIEW</small></div>
           </div>
           <div className="about-visual-foot"><span><i className="green-dot" /> SHARED OPERATIONAL PICTURE</span><span>VISIBILITY → ACTION</span></div>
         </div>
@@ -55,7 +55,7 @@ export default function About() {
 
       <section className="about-definition">
         <div><p className="eyebrow">WHAT THE PLATFORM DOES</p><h2>From scattered updates<br /><span>to a clearer next move.</span></h2></div>
-        <div className="about-definition-copy"><p>Modern logistics depends on information coming from many places: shipment records, carrier updates, route plans, delivery milestones, fleet activity, and messages from people on the ground. When that information is fragmented, teams can spend valuable time piecing together what happened instead of deciding what to do about it.</p><p>CargoTrace is designed to bring those signals into one structured view. It helps users follow shipment progress, notice deviations from expectations, compare route performance, and understand which exceptions deserve attention. The result is a more organized foundation for planning, communication, and operational decisions.</p></div>
+        <div className="about-definition-copy"><p>Modern logistics depends on information coming from many places: shipment records, carrier updates, route plans, delivery milestones, fleet activity, and messages from people on the ground. When that information is fragmented, teams can spend valuable time piecing together what happened instead of deciding what to do about it.</p><p>Logisentra is designed to bring those signals into one structured view. It helps users follow shipment progress, notice deviations from expectations, compare route performance, and understand which exceptions deserve attention. The result is a more organized foundation for planning, communication, and operational decisions.</p></div>
       </section>
 
       <section className="section about-capabilities">
@@ -64,12 +64,12 @@ export default function About() {
       </section>
 
       <section className="about-process-band">
-        <div className="about-process-intro"><p className="eyebrow">HOW IT FITS TOGETHER</p><h2>A practical path from<br /><span>information to action.</span></h2><p>CargoTrace is designed to support the decisions logistics teams make every day—not to replace their experience or judgment.</p></div>
+        <div className="about-process-intro"><p className="eyebrow">HOW IT FITS TOGETHER</p><h2>A practical path from<br /><span>information to action.</span></h2><p>Logisentra is designed to support the decisions logistics teams make every day—not to replace their experience or judgment.</p></div>
         <div className="about-flow">{flow.map(([title, text], i) => <article key={title}><span className="about-flow-number">0{i + 1}</span><div><h3>{title}</h3><p>{text}</p></div>{i < flow.length - 1 && <ArrowRight className="flow-arrow" />}</article>)}</div>
       </section>
 
       <section className="section about-audience">
-        <div className="sectionhead"><div><p className="eyebrow">WHO IT IS FOR</p><h2>Built around the people<br /><span>who keep goods moving.</span></h2></div><p>Different roles need different answers. CargoTrace aims to give each team a clearer operational starting point.</p></div>
+        <div className="sectionhead"><div><p className="eyebrow">WHO IT IS FOR</p><h2>Built around the people<br /><span>who keep goods moving.</span></h2></div><p>Different roles need different answers. Logisentra aims to give each team a clearer operational starting point.</p></div>
         <div className="cards">{audiences.map(({ icon: Icon, title, text }) => <article key={title} className="about-audience-card"><span className="icon"><Icon /></span><h3>{title}</h3><p>{text}</p></article>)}</div>
       </section>
 
@@ -86,7 +86,7 @@ export default function About() {
       <h2>
         The people building
         <br />
-        <span>CargoTrace.</span>
+        <span>Logisentra.</span>
       </h2>
 
       <p>
@@ -105,7 +105,7 @@ export default function About() {
         <h3>Vincent Paul Somtochukwu</h3>
 
         <p>
-          Leads the vision behind CargoTrace Intelligence, focused on
+          Leads the vision behind Logisentra Intelligence, focused on
           making complex supply-chain information easier to understand
           and helping logistics teams make clearer, better-informed
           operational decisions.
@@ -121,7 +121,7 @@ export default function About() {
         <h3>Ezembakwe Promise Akachukwu</h3>
 
         <p>
-          Contributes to the development and direction of CargoTrace
+          Contributes to the development and direction of Logisentra
           Intelligence, helping shape a platform designed to improve
           shipment visibility, operational awareness, and supply-chain
           decision-making.
@@ -130,7 +130,7 @@ export default function About() {
     </article>
   </div>
 </section>
-      <section className="about-honesty"><div className="about-honesty-icon"><Activity /></div><div><p className="eyebrow">A NOTE ON CAPABILITIES</p><h3>Designed for actionable visibility.</h3><p>CargoTrace’s product pages describe the intended platform experience. Live carrier integrations, predictive models, automated alerts, and real-time data processing depend on the underlying services and data connections being implemented and configured. This website does not imply that every integration or automated capability is already active.</p></div></section>
+      <section className="about-honesty"><div className="about-honesty-icon"><Activity /></div><div><p className="eyebrow">A NOTE ON CAPABILITIES</p><h3>Designed for actionable visibility.</h3><p>Logisentra’s product pages describe the intended platform experience. Live carrier integrations, predictive models, automated alerts, and real-time data processing depend on the underlying services and data connections being implemented and configured. This website does not imply that every integration or automated capability is already active.</p></div></section>
 
       <section className="section"><div className="cta"><div><p className="eyebrow">SEE YOUR OPERATIONS MORE CLEARLY</p><h2>Let’s talk about your supply chain.</h2><p>Tell us where shipment visibility or exception handling is hardest for your team.</p></div><Link className="btn" to="/contact">Contact us <ArrowRight /></Link></div></section>
     </main>

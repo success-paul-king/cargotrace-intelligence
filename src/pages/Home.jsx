@@ -242,7 +242,7 @@ export default function Home() {
               into focus.
             </h2>
             <p>
-              See how CargoTrace can help your team work with greater clarity.
+              See how Logisentra can help your team work with greater clarity.
             </p>
           </div>
           <Link className="btn" to="/contact">

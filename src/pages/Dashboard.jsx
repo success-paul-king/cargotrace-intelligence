@@ -76,7 +76,7 @@ export default function Dashboard() {
     ].join("\n");
     const a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv" }));
-    a.download = "cargotrace-shipments.csv";
+    a.download = "Logisentra-shipments.csv";
     a.click();
   }
   return (

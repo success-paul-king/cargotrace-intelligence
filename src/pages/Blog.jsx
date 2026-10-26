@@ -1,1 +1,136 @@
-import{useState}from'react';import{Link}from'react-router-dom';import{ArrowUpRight,Search,Clock3}from'lucide-react';const posts=[['RISK & RESILIENCE','OCT 14, 2026','6 MIN READ','A practical guide to building a shipment risk review process','Turn scattered updates into a repeatable exception review workflow.'],['OPERATIONS','OCT 08, 2026','4 MIN READ','What ETA variance can tell you about your supply chain','Review schedule drift, patterns, and the questions worth asking.'],['VISIBILITY','SEP 29, 2026','7 MIN READ','From status updates to operational context','Why visibility becomes more useful when teams can see the reason behind a signal.'],['PLANNING','SEP 17, 2026','5 MIN READ','Five questions to ask when reviewing a logistics lane','A structured way to compare route performance.'],['SUPPLIERS','SEP 03, 2026','5 MIN READ','Making supplier performance reviews more actionable','Examine reliability, recurring issues, and service context.'],['DATA','AUG 21, 2026','8 MIN READ','Designing dashboards that help people decide','Practical principles for prioritization and dashboard design.']];export default function Blog(){const[q,setQ]=useState('');const[cat,setCat]=useState('ALL');const cats=['ALL',...new Set(posts.map(p=>p[0]))];const shown=posts.filter(p=>(cat==='ALL'||p[0]===cat)&&p.join(' ').toLowerCase().includes(q.toLowerCase()));return <main className="wrap page"><section className="pagehero bloghero"><p className="eyebrow">THE CARGOTRACE JOURNAL</p><h1>Ideas for a more<br/><span>resilient supply chain.</span></h1><p>Perspectives on logistics visibility, operational risk, and the decisions that keep goods moving.</p></section><div className="blogtools"><div className="filters">{cats.map(c=><button className={cat===c?'active':''} key={c} onClick={()=>setCat(c)}>{c}</button>)}</div><label className="search"><Search/><input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search articles"/></label></div><section className="bloggrid">{shown.map((p,i)=><article className={i===0&&cat==='ALL'&&!q?'blogcard big':'blogcard'} key={p[3]}><div className={'art art'+(i%5)}><span>{p[0]}</span><b>0{i+1}</b></div><div className="blogbody"><div className="meta">{p[1]} · <Clock3/> {p[2]}</div><h2>{p[3]}</h2><p>{p[4]}</p><button onClick={()=>alert('Article preview coming soon.')} className="read">Read article <ArrowUpRight/></button></div></article>)}</section>{!shown.length&&<p className="empty">No articles match that search.</p>}<section className="cta"><div><p className="eyebrow">THE SIGNAL BRIEF</p><h2>Clear thinking for complex routes.</h2><p>Get in touch for perspectives on logistics risk and supply-chain visibility.</p></div><Link className="btn" to="/contact">Get in touch <ArrowUpRight/></Link></section></main>}
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight, Search, Clock3 } from "lucide-react";
+const posts = [
+  [
+    "RISK & RESILIENCE",
+    "OCT 14, 2026",
+    "6 MIN READ",
+    "A practical guide to building a shipment risk review process",
+    "Turn scattered updates into a repeatable exception review workflow.",
+  ],
+  [
+    "OPERATIONS",
+    "OCT 08, 2026",
+    "4 MIN READ",
+    "What ETA variance can tell you about your supply chain",
+    "Review schedule drift, patterns, and the questions worth asking.",
+  ],
+  [
+    "VISIBILITY",
+    "SEP 29, 2026",
+    "7 MIN READ",
+    "From status updates to operational context",
+    "Why visibility becomes more useful when teams can see the reason behind a signal.",
+  ],
+  [
+    "PLANNING",
+    "SEP 17, 2026",
+    "5 MIN READ",
+    "Five questions to ask when reviewing a logistics lane",
+    "A structured way to compare route performance.",
+  ],
+  [
+    "SUPPLIERS",
+    "SEP 03, 2026",
+    "5 MIN READ",
+    "Making supplier performance reviews more actionable",
+    "Examine reliability, recurring issues, and service context.",
+  ],
+  [
+    "DATA",
+    "AUG 21, 2026",
+    "8 MIN READ",
+    "Designing dashboards that help people decide",
+    "Practical principles for prioritization and dashboard design.",
+  ],
+];
+export default function Blog() {
+  const [q, setQ] = useState("");
+  const [cat, setCat] = useState("ALL");
+  const cats = ["ALL", ...new Set(posts.map((p) => p[0]))];
+  const shown = posts.filter(
+    (p) =>
+      (cat === "ALL" || p[0] === cat) &&
+      p.join(" ").toLowerCase().includes(q.toLowerCase()),
+  );
+  return (
+    <main className="wrap page">
+      <section className="pagehero bloghero">
+        <p className="eyebrow">THE LOGISENTRA JOURNAL</p>
+        <h1>
+          Ideas for a more
+          <br />
+          <span>resilient supply chain.</span>
+        </h1>
+        <p>
+          Perspectives on logistics visibility, operational risk, and the
+          decisions that keep goods moving.
+        </p>
+      </section>
+      <div className="blogtools">
+        <div className="filters">
+          {cats.map((c) => (
+            <button
+              className={cat === c ? "active" : ""}
+              key={c}
+              onClick={() => setCat(c)}
+            >
+              {c}
+            </button>
+          ))}
+        </div>
+        <label className="search">
+          <Search />
+          <input
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
+            placeholder="Search articles"
+          />
+        </label>
+      </div>
+      <section className="bloggrid">
+        {shown.map((p, i) => (
+          <article
+            className={
+              i === 0 && cat === "ALL" && !q ? "blogcard big" : "blogcard"
+            }
+            key={p[3]}
+          >
+            <div className={"art art" + (i % 5)}>
+              <span>{p[0]}</span>
+              <b>0{i + 1}</b>
+            </div>
+            <div className="blogbody">
+              <div className="meta">
+                {p[1]} · <Clock3 /> {p[2]}
+              </div>
+              <h2>{p[3]}</h2>
+              <p>{p[4]}</p>
+              <button
+                onClick={() => alert("Article preview coming soon.")}
+                className="read"
+              >
+                Read article <ArrowUpRight />
+              </button>
+            </div>
+          </article>
+        ))}
+      </section>
+      {!shown.length && <p className="empty">No articles match that search.</p>}
+      <section className="cta">
+        <div>
+          <p className="eyebrow">THE SIGNAL BRIEF</p>
+          <h2>Clear thinking for complex routes.</h2>
+          <p>
+            Get in touch for perspectives on logistics risk and supply-chain
+            visibility.
+          </p>
+        </div>
+        <Link className="btn" to="/contact">
+          Get in touch <ArrowUpRight />
+        </Link>
+      </section>
+    </main>
+  );
+}
