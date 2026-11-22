@@ -102,7 +102,7 @@ export default function About() {
 
       <div className="about-founder-content">
         <p className="eyebrow">FOUNDER</p>
-        <h3>Vincent Paul Somtochukwu</h3>
+        <h3>Vincent Chiamaka Laughter</h3>
 
         <p>
           Leads the vision behind Logisentra Intelligence, focused on
